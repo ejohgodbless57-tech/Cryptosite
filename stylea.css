@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header / Navbar */
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdde1;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #0077b6;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #e0f7fa;
+  }
+  
+  /* Hero or section headers */
+  .about-hero, .about-values, .team-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-hero {
+    background-color: #e0f7fa;
+  }
+  
+  .about-hero h2 {
+    font-size: 2.5rem;
+    color: #023e8a;
+  }
+  
+  .about-hero p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Core values section */
+  .about-values {
+    background-color: #ffffff;
+  }
+  
+  .about-values h3,
+  .team-section h3 {
+    color: #0077b6;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .values-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .values-list li {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .values-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #0077b6;
+    font-size: 1rem;
+  }
+  
+  /* Team Section */
+  .team-section {
+    background-color: #f0f4f8;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 0 20px;
+  }
+  
+  .team-member {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: transform 0.3s;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 3px solid #0077b6;
+  }
+  
+  .team-member h4 {
+    color: #0077b6;
+    margin-bottom: 4px;
+  }
+  
+  .team-member p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Login container */
+  .login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #0077b6;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
+  .login-container button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #023e8a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ffffff;
+    border-top: 1px solid #dcdde1;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #777;
+    margin-top: 60px;
+  }

@@ -1,0 +1,90 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login - CryptoDash</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <header>
+      <div class="container">
+        <h1>CryptoDash</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <main class="form-wrapper">
+      <div class="form-box">
+        <h2>Login</h2>
+        <form onsubmit="fakeLogin(event)">
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+  
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+  
+          <button type="submit">Login</button>
+          <p id="login-msg"></p>
+        </form>
+        <p class="form-footer">Don't have an account? <a href="register.html">Register here</a></p>
+      </div>
+    </main>
+  
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 CryptoDash. Built for crypto enthusiasts.</p>
+      </div>
+    </footer>
+  
+    <script>
+      function fakeLogin(event) {
+        event.preventDefault();
+        document.getElementById('login-msg').textContent = "Login successful! (demo only)";
+        document.getElementById('login-msg').style.color = "#0077b6";
+      }
+    </script>
+  
+  </body>
+  </html>">
+  <title>Login - CryptoDash</title>
+  <link rel="stylesheet" href="stylel.css">
+</head>
+<body>
+  <main class="login-container">
+    <h2>Login</h2>
+    <form onsubmit="fakeLogin(event)">
+      <label>
+        Username:
+        <input type="text" name="username" required>
+      </label>
+      <br><br>
+      <label>
+        Password:
+        <input type="password" name="password" required>
+      </label>
+      <br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p id="message" style="margin-top: 10px; color: lightgreen;"></p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </main>
+
+  <script>
+    function fakeLogin(event) {
+      event.preventDefault();
+      document.getElementById('message').innerText = "Login successful! (not really)";
+    }
+  </script>
+</body>
+</html>

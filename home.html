@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryptoDash - Your Gateway to Crypto</title>
+  <link rel="stylesheet" href="styleh.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>CryptoDash</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-content">
+        <h2>Empowering Your Crypto Journey</h2>
+        <p>Stay informed, invest wisely, and grow your crypto portfolio with confidence.</p>
+        <a href="register.html" class="btn-primary">Get Started</a>
+      </div>
+    </section>
+
+    <section class="features-section container">
+      <h3>Why Choose CryptoDash?</h3>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h4>Real-Time Market Data</h4>
+          <p>Track your favorite cryptocurrencies with up-to-the-minute prices and charts.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Secure Wallet Integration</h4>
+          <p>Manage your assets safely with our advanced wallet connectivity options.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Expert Insights</h4>
+          <p>Benefit from market analysis and insights curated by crypto experts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Get the latest crypto news and updates delivered straight to your inbox.</p>
+        <form class="newsletter-form" onsubmit="subscribe(event)">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-msg"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 CryptoDash. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function subscribe(event) {
+      event.preventDefault();
+      const msg = document.getElementById("newsletter-msg");
+      msg.textContent = "Thank you for subscribing! (Demo only)";
+      msg.style.color = "#0077b6";
+    }
+  </script>
+
+</body>
+</html>

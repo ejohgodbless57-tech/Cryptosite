@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - CryptoDash</title>
+  <link rel="stylesheet" href="stylel.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>CryptoDash</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-wrapper">
+    <div class="form-box">
+      <h2>Create an Account</h2>
+      <form onsubmit="fakeRegister(event)">
+        <label for="new-username">Username</label>
+        <input type="text" id="new-username" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="new-password">Password</label>
+        <input type="password" id="new-password" required>
+
+        <button type="submit">Register</button>
+        <p id="register-msg"></p>
+      </form>
+      <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CryptoDash. Empowering your crypto journey.</p>
+    </div>
+  </footer>
+
+  <script>
+    function fakeRegister(event) {
+      event.preventDefault();
+      document.getElementById('register-msg').textContent = "Registration successful! (demo only)";
+      document.getElementById('register-msg').style.color = "#0077b6";
+    }
+  </script>
+
+</body>
+</html>
